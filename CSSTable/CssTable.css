@@ -6,23 +6,23 @@ table.myTable {
     width: 700px;
 }
 
-tr.myTableHead{
+tr.myTableHead {
     background: #3498DB;
     border: 1px solid #CECECE;
     color: white;
     text-align: left;
 }
 
-tr.oddString{
+tr.oddString {
     background: #EEEEEE;
     border: 1px solid #CECECE;
 }
 
-tr.evenString{
+tr.evenString {
     border: 1px solid #CECECE;
 }
 
-td.column,th.column{
+td.column, th.column {
     border: 1px solid #CECECE;
     padding: 10px;
     text-align: left;
