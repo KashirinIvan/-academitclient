@@ -1,32 +1,36 @@
-form.myForm {
+.myForm {
     max-width: 700px;
     background: #FEEED6;
+    font-family: fallback;
 }
 
-label.myLabel {
+.head {
+    color: #676565;
+    font-weight: normal;
+    margin-left: 20px;
+    font-size: 28px;
+    font-family: Calibri;
+}
+
+.myLabel {
     color: #676565;
     font-weight: bold;
     margin-left: 20px;
     font-size: 16px;
+    font-family: Calibri;
 }
 
-input.myInput {
+.myInput {
     margin: 5px 20px 15px;
     width: 90%;
     padding: 10px;
     font-size: 14px;
     color: #999999;
-    font-family: Arial;
+    font-family: Calibri;
 }
 
-p.button {
-    margin-right: auto;
-}
-
-textarea.myTextArea {
-    margin-top: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+.myTextArea {
+    margin: 5px 20px;
     color: #999999;
     width: 90%;
     height: 100px;
@@ -35,20 +39,20 @@ textarea.myTextArea {
     font-family: Calibri;
 }
 
-label.comment {
+.comment {
     color: #676565;
     margin-left: 20px;
     font-size: 14px;
     margin-bottom: 5px;
-    font-family: Arial;
+    font-family: Calibri;
 }
 
-button.myButton {
-    margin-left: 77%;
+.myButton {
+    margin-left: 72%;
     margin-bottom: 15px;
     margin-right: 20px;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     background: #378DB2;
     color: white;
 }
