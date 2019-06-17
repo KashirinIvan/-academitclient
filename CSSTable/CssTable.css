@@ -1,28 +1,24 @@
-table.myTable {
+.myTable {
     font-family: Calibri;
     font-size: 18px;
     font-weight: normal;
     border-collapse: collapse;
-    width: 700px;
+    width: 50%;
 }
 
-tr.myTableHead {
+.myTable tbody tr:nth-child(2n-1) {
+    background: #EEEEEE;
+    border: 1px solid #CECECE;
+}
+
+.myTable thead tr {
     background: #3498DB;
     border: 1px solid #CECECE;
     color: white;
     text-align: left;
 }
 
-tr.oddString {
-    background: #EEEEEE;
-    border: 1px solid #CECECE;
-}
-
-tr.evenString {
-    border: 1px solid #CECECE;
-}
-
-td.column, th.column {
+td, th {
     border: 1px solid #CECECE;
     padding: 10px;
     text-align: left;
