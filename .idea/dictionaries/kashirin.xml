@@ -1,7 +1,13 @@
 <component name="ProjectDictionaryState">
   <dictionary name="kashirin">
     <words>
+      <w>mybutton</w>
+      <w>myform</w>
+      <w>myinput</w>
+      <w>mylabel</w>
       <w>mytable</w>
+      <w>mytextarea</w>
+      <w>sendapplication</w>
     </words>
   </dictionary>
 </component>
