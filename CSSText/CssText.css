@@ -1,21 +1,19 @@
-h1.header {
-    max-width: 600px;
-    font-size: 26px;
+.header {
+    max-width: 670px;
+    font-size: 36px;
     font-weight: normal;
     color: #676565;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .color span {
     font-weight: bold;
     color: #378DB2;
-    line-height: 1.5;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .text p {
     text-indent: 20px;
-    line-height: 1.5;
     margin-top: 0.5em;
 }
 
@@ -26,10 +24,10 @@ p {
 }
 
 body {
-    max-width: 680px;
+    max-width: 770px;
     background-color: #FEEED6;
     font-family: Calibri;
-    font-size: 16px;
+    font-size: 18px;
     margin-left: 15px;
     margin-top: 15px;
     color: #676565;
