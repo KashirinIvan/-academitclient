@@ -1,3 +1,18 @@
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+body {
+    max-width: 770px;
+    background-color: #FEEED6;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    color: #676565;
+    padding: 15px;
+}
+
 .header {
     max-width: 670px;
     font-size: 36px;
@@ -17,18 +32,3 @@
     margin-top: 0.5em;
 }
 
-p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-body {
-    max-width: 770px;
-    background-color: #FEEED6;
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-    margin-left: 15px;
-    margin-top: 15px;
-    color: #676565;
-}
