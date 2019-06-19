@@ -1,9 +1,3 @@
-p {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
 body {
     max-width: 770px;
     background-color: #FEEED6;
@@ -11,6 +5,13 @@ body {
     font-size: 18px;
     color: #676565;
     padding: 15px;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    line-height:1.5;
 }
 
 .header {

@@ -1,4 +1,4 @@
-.mytable {
+.table {
     font-family: Calibri, sans-serif;
     font-size: 18px;
     font-weight: normal;
@@ -6,12 +6,12 @@
     width: 650px;
 }
 
-.mytable tbody tr:nth-child(2n-1) {
+.table tbody tr:nth-child(2n-1) {
     background: #EEEEEE;
     border: 1px solid #CECECE;
 }
 
-.mytable thead {
+.table thead {
     background: #3498DB;
     border: 1px solid #CECECE;
     color: white;
