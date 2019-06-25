@@ -1,6 +1,6 @@
 .table {
     font-family: Calibri, sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: normal;
     border-collapse: collapse;
     max-width: 900px;
@@ -18,7 +18,7 @@
     text-align: left;
 }
 
-.table td, th {
+.table td, .table th {
     border: 1px solid #CECECE;
     padding: 15px 50px 15px 15px;
     text-align: left;
