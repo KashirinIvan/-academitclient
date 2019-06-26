@@ -12,7 +12,7 @@
     border: 1px solid #CECECE;
 }
 
-.table thead { 
+.table thead {
     background: #3498DB;
     border: 1px solid #CECECE;
     color: white;
@@ -21,7 +21,7 @@
 
 .table td, .table th {
     border: 1px solid #CECECE;
-    padding: 15px 15px 15px 15px;
+    padding: 15px;
     text-align: left;
 }
 
