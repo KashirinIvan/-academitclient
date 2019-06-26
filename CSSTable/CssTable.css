@@ -3,7 +3,7 @@
     font-size: 24px;
     font-weight: normal;
     border-collapse: collapse;
-    max-width: 900px;
+    max-width: 775px;
 }
 
 .table tbody tr:nth-child(2n-1) {
@@ -24,4 +24,18 @@
     text-align: left;
 }
 
+.first {
+    min-width: 150px;
+}
 
+.last {
+    min-width: 150px;
+}
+
+.job {
+    min-width: 300px;
+}
+
+.twitter {
+    min-width: 175px;
+}
