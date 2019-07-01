@@ -7,18 +7,20 @@ console.log(array);
 var arrayFirst = array.slice(0, 5);
 console.log(arrayFirst);
 
-
-var arrayLast = [];
-for (var i = 0; i < array.length; i++) {
-    arrayLast[i] = array[i];
-}
-arrayLast.splice(0, array.length - 5);
+var arrayLast = array.slice(array.length - 5, array.length);
 console.log(arrayLast);
 
+var sum = 0;
+for (var i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+        sum = sum + array[i];
+    }
+}
+console.log(sum);
 
 var arrayOneToHundred = [];
 for (i = 0; i < 100; i++) {
-    arrayOneToHundred[i] = i + 1;
+    arrayOneToHundred.push(i + 1);
 }
 console.log(arrayOneToHundred);
 var arraySquare = [];
