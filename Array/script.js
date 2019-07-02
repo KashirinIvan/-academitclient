@@ -7,26 +7,29 @@ console.log(array);
 var arrayFirst = array.slice(0, 5);
 console.log(arrayFirst);
 
-var arrayLast = array.slice(array.length - 5, array.length);
+var arrayLast = array.slice(array.length - 5);
 console.log(arrayLast);
 
-var sum = 0;
-for (var i = 0; i < array.length; i++) {
-    if (array[i] % 2 === 0) {
-        sum = sum + array[i];
+var result = array.reduce(function (sum, current) {
+    if (current % 2 === 0) {
+        return sum + current;
+    } else {
+        return sum;
     }
-}
-console.log(sum);
+});
+console.log(result);
 
 var arrayOneToHundred = [];
-for (i = 0; i < 100; i++) {
-    arrayOneToHundred.push(i + 1);
+for (var i = 1; i <= 100; i++) {
+    arrayOneToHundred.push(i);
 }
 console.log(arrayOneToHundred);
-var arraySquare = [];
-for (i = 0; i < arrayOneToHundred.length; i++) {
-    if (arrayOneToHundred[i] % 2 === 0) {
-        arraySquare.push(Math.pow(arrayOneToHundred[i], 2));
+
+var arraySquare = arrayOneToHundred.filter(function (value) {
+    if (value % 2 === 0) {
+        return value;
     }
-}
+}).map(function (value) {
+    return Math.pow(value, 2)
+});
 console.log(arraySquare);
