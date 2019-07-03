@@ -63,10 +63,24 @@ console.log(country);
 country.sort(function (a, b) {
     return b.cityList.length - a.cityList.length;
 });
+var maxCountCity = country[0].cityList.length;
+console.log(country.filter(function (value) {
+    if (maxCountCity !== value.cityList.length) {
+        return 0;
+    } else {
+        return value;
+    }
+}).map(function (value) {
+    return value.countryName;
+}));
 
 var object = {};
 for (var i = 0; i < country.length; i++) {
-    object.country[i].countryName;
+    object[country[i].countryName] = country[i].cityList.map(function (value) {
+        return value.number
+    }).reduce(function (sum, current) {
+        return parseInt(sum) + parseInt(current)
+    });
 }
 for (var propName in object) {
     console.log(propName + " : " + object[propName]);
