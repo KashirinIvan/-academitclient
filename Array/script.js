@@ -16,7 +16,7 @@ var result = array.reduce(function (sum, current) {
     } else {
         return sum;
     }
-});
+}, 0);
 console.log(result);
 
 var arrayOneToHundred = [];
@@ -28,6 +28,8 @@ console.log(arrayOneToHundred);
 var arraySquare = arrayOneToHundred.filter(function (value) {
     if (value % 2 === 0) {
         return value;
+    } else {
+        return 0;
     }
 }).map(function (value) {
     return Math.pow(value, 2)
