@@ -26,11 +26,7 @@ for (var i = 1; i <= 100; i++) {
 console.log(arrayOneToHundred);
 
 var arraySquare = arrayOneToHundred.filter(function (value) {
-    if (value % 2 === 0) {
-        return value;
-    } else {
-        return 0;
-    }
+    return value % 2 === 0;
 }).map(function (value) {
     return Math.pow(value, 2)
 });
