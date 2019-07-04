@@ -28,6 +28,6 @@ console.log(arrayOneToHundred);
 var arraySquare = arrayOneToHundred.filter(function (value) {
     return value % 2 === 0;
 }).map(function (value) {
-    return Math.pow(value, 2)
+    return Math.pow(value, 2);
 });
 console.log(arraySquare);
