@@ -1,4 +1,4 @@
-var celsius = document.querySelector("input");
+var celsius = document.querySelector(".celsius");
 var kelvin = document.querySelector(".kelvin");
 var fahrenheit = document.querySelector(".fahrenheit");
 
