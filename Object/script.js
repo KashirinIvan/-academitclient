@@ -1,83 +1,85 @@
-var country = [{
+var countries = [{
     countryName: "Russia",
-    cityList: [{
+    cities: [{
         cityName: "Moscow",
-        number: "12000000"
+        population: 12000000
     }, {
         cityName: "Novosibirsk",
-        number: "1600000"
+        population: 1600000
     }, {
         cityName: "Yekaterinburg",
-        number: "1200000"
+        population: 1200000
     }, {
         cityName: "Saint Petersburg",
-        number: "3000000"
+        population: 3000000
     }, {
         cityName: "Kazan",
-        number: "1000000"
+        population: 1000000
     }]
 }, {
     countryName: "Italy",
-    cityList: [{
+    cities: [{
         cityName: "Rim",
-        number: "2800000"
+        population: 2800000
     }, {
         cityName: "Milan",
-        number: "1300000"
+        population: 1300000
     }, {
         cityName: "Turin",
-        number: "900000"
+        population: 900000
     }]
 }, {
     countryName: "USA",
-    cityList: [{
+    cities: [{
         cityName: "New-York",
-        number: "8500000"
+        population: 8500000
     }, {
         cityName: "Los-Angele's",
-        number: "3800000"
+        population: 3800000
     }, {
         cityName: "Chicago",
-        number: "2700000"
+        population: 2700000
     }, {
-        cityName: "Houston", "number": "2300000"
+        cityName: "Houston",
+        population: 2300000
     }]
 }, {
     countryName: "France",
-    cityList: [{
+    cities: [{
         cityName: "Paris",
-        number: "2200000"
+        population: 2200000
     }, {
         cityName: "Marseille",
-        number: "850000"
+        population: 850000
     }, {
         cityName: "Lyon",
-        number: "480000"
+        population: 480000
     }, {
         cityName: "Toulouse",
-        number: "440000"
+        population: 400000
     }]
 }];
-console.log(country);
+console.log(countries);
 
-country.sort(function (a, b) {
-    return b.cityList.length - a.cityList.length;
+countries.sort(function (a, b) {
+    return b.cities.length - a.cities.length;
 });
-var maxCountCity = country[0].cityList.length;
-console.log(country.filter(function (value) {
-    return maxCountCity === value.cityList.length;
+var maxCountCity = countries[0].cities.length;
+console.log(countries.filter(function (value) {
+    return maxCountCity === value.cities.length;
 }).map(function (value) {
     return value.countryName;
 }));
 
 var object = {};
-for (var i = 0; i < country.length; i++) {
-    object[country[i].countryName] = country[i].cityList.map(function (value) {
-        return value.number
-    }).reduce(function (sum, current) {
-        return parseInt(sum) + parseInt(current)
-    },0);
-}
+countries.forEach(function (value) {
+        object[value.countryName] = value.cities.map(function (value) {
+            return value.population
+        }).reduce(function (sum, current) {
+            return sum + current;
+        }, 0);
+    }
+);
 for (var propName in object) {
     console.log(propName + " : " + object[propName]);
 }
