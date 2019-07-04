@@ -73,13 +73,12 @@ console.log(countries.filter(function (value) {
 
 var object = {};
 countries.forEach(function (value) {
-        object[value.countryName] = value.cities.map(function (value) {
-            return value.population
-        }).reduce(function (sum, current) {
-            return sum + current;
-        }, 0);
-    }
-);
+    object[value.countryName] = value.cities.map(function (value) {
+        return value.population
+    }).reduce(function (sum, current) {
+        return sum + current;
+    }, 0);
+});
 for (var propName in object) {
     console.log(propName + " : " + object[propName]);
 }
