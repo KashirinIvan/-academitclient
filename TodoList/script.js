@@ -3,7 +3,6 @@ var list = document.querySelector('ul');
 
 list.addEventListener('click', function (evt) {
     if (evt.target.valueOf().tagName === "BUTTON") {
-        console.log("удалить");
         var dir = evt.target.parentNode;
         dir.remove();
     }
