@@ -1,13 +1,16 @@
-var inputValue = document.querySelector(".new-task");
-var list = document.querySelector("ul");
-var buttonNewTask = document.querySelector(".button-new-task");
-
 function ready() {
-    list.addEventListener('click', function (evt) {
-        if (evt.target.valueOf().tagName === "BUTTON") evt.target.parentElement.remove();
-    }, false);
+    var inputValue = document.querySelector(".inputValue");
+    var list = document.querySelector("ul");
+    var appendTask = document.querySelector(".append");
 
-    buttonNewTask.addEventListener("click", function newTask() {
+    list.addEventListener("click", function (evt) {
+        if (evt.target.valueOf().tagName === "BUTTON") {
+            var child = list.children[0];
+            list.removeChild(child);
+        }
+    });
+
+    appendTask.addEventListener("click", function () {
         if (inputValue.value === "") {
             alert("Задача не введена");
             return;
