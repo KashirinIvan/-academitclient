@@ -5,8 +5,8 @@ function ready() {
 
     list.addEventListener("click", function (evt) {
         if (evt.target.valueOf().tagName === "BUTTON") {
-            var child = list.children[0];
-            list.removeChild(child);
+            var child = evt.target.parentNode;
+            child.parentNode.removeChild(child);
         }
     });
 
