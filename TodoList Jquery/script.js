@@ -10,7 +10,9 @@ $(document).ready(function () {
         }
     });
 
-    $("#list").on("click", "li", function () {
-        $(this).remove();
+    $("#list").click(function (evt) {
+        if (evt.target.valueOf().tagName === "BUTTON") {
+            $(this).remove();
+        }
     });
 });
